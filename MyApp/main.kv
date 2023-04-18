@@ -1,0 +1,25 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    Label:
+        text: 'Bluetooth Mouse App'
+        font_size: 32
+        size_hint: 1, 0.2
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint: 1, 0.2
+
+        Button:
+            text: 'Start'
+            on_press: app.start()
+
+        Button:
+            text: 'Stop'
+            on_press: app.stop()
+
+    Label:
+        id: status_label
+        text: 'Status: Not connected'
+        font_size: 24
+        size_hint: 1, 0.2
